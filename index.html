@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+    <title>Rock Paper Scissor</title>
+    <link rel="icon" type="image/x-icon" href="./icons/scissor.png">
+</head>
+<body>
+    <div class="container" id="cont1">
+        <div class="header">
+            <div class="element-container">
+                <div class="text">
+                    <div class="rock">ROCK</div>
+                    <div class="paper">PAPER</div>
+                    <div class="scissors">SCISSORS</div>
+                </div>
+                <div class="score">
+                    <div class="Nscore">
+                        <div class="score-text">
+                            <span>Computer</span>
+                            <span>Score</span>
+                        </div>
+                        <div>
+                            <span id="cscore">0</span>
+                        </div>
+                    </div>
+                    <div class="Nscore">
+                        <div class="score-text">
+                            <span>Your</span>
+                            <span>Score</span>
+                        </div>
+                        <div>
+                            <span id="mscore">0</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="footer" id="foot">
+            <d class="line1"></d>
+            <d class="line2"></d>
+            <d class="line3"></d>
+            <div class="upper">
+                <div class="blue outer-circle">
+                    <div class="shape">
+                        <img src="./icons/fist.png" class="touch" alt="" id="fist">
+                    </div>
+                </div>
+                <div class="purple outer-circle">
+                    <div class="shape">
+                        <img src="./icons/scissor.png" class="touch" alt="" id="scissor">
+                    </div>
+                </div>
+            </div>
+            <div class="lower">
+                <div class="orange outer-circle">
+                    <div class="shape">
+                        <img src="./icons/hand.png" class="touch" alt="" id="hand">
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="footer2 hidden" id="ft2">
+            <div class="left hidden" id="leftd">
+                <span id="you-picked">YOU PICKED</span>
+                <div class="blue outer-circle dist hidden" id="fistwinuser">
+                    <div class="shape">
+                        <img src="./icons/fist.png" class="touch" alt="" id="fistwin">
+                    </div>
+                </div>
+                <div class="purple outer-circle dist hidden" id="scissorwinuser">
+                    <div class="shape">
+                        <img src="./icons/scissor.png" class="touch" alt="" id="scissorwin">
+                    </div>
+                </div>
+                <div class="orange outer-circle dist hidden" id="handwinuser">
+                    <div class="shape">
+                        <img src="./icons/hand.png" class="touch" alt="" id="handwin">
+                    </div>
+                </div>
+            </div>
+            <div class="answertext hidden" id="winlosetext">
+                <h1 id="text1">You Win</h1>
+                <h2 id="text2">&nbspAgainst PC</h2>
+            </div>
+            <div id="playbtn" class="playbut hidden">Play again</div>
+            <div class="right hidden" id="rightd">
+                <span id="pc-picked">PC Picked</span>
+                <div class="blue outer-circle dist hidden" id="fistwinpc">
+                    <div class="shape">
+                        <img src="./icons/fist.png" class="touch" alt="" id="fistwin">
+                    </div>
+                </div>
+                <div class="purple outer-circle dist hidden" id="scissorwinpc">
+                    <div class="shape">
+                        <img src="./icons/scissor.png" class="touch" alt="" id="scissorwin">
+                    </div>
+                </div>
+                <div class="orange outer-circle dist hidden" id="handwinpc">
+                    <div class="shape">
+                        <img src="./icons/hand.png" class="touch" alt="" id="handwin">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="container2 hidden" id="cont2">
+        <div class="first">
+            <img src="./assets/stars.png" alt="">
+            <div class="cup">
+                <img src="./assets/cup.png" alt="">
+            </div>
+        </div>
+        <div class="second">
+            <img src="./assets/hurraytext.png" alt="">
+        </div>
+        <div class="third">
+            <img src="./assets/wontext.png" alt="">
+        </div>
+        <div class="play-again" id="playagain">
+            <a href="index.html">Play Again</a>
+        </div>
+    </div>
+    <div class="rules hidden" id="rule">
+        <div id="cross" class="shutdown">
+            <img src="./icons/close.png" alt="X">
+        </div>
+        <div class="game-text">Game Rules</div>
+        <ul>
+            <li>Rock beats scissors, scissors beat paper, and paper beats rock.</li>
+            <li>Agree ahead of time whether you'll count off "rock, paper, scissors, shoot" or "rock, paper, scissors."</li>
+            <li>Use rock, paper, scissors to settle minor decisions or simply play to pass the time.</li>
+            <li>If both players lay down the same hand, each player lays down another hand.</li>
+        </ul>
+    </div>
+    <div class="button">
+        <button id="btn">Rules</button>
+    </div>
+    <div>
+        <button class="hidden" id="nextbtn">
+            NEXT
+        </button>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
